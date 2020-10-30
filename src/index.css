@@ -14,6 +14,23 @@ body{
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
+  background-color:#9C9C9C ;
+
+}
+.editor-container.collapsed{
+  flex-grow: 0;
+}
+.editor-container.collapsed .CodeMirror-scroll{
+  position: absolute;
+  overflow: hidden !important;
+}
+.expand-collapse-btn{
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+
 }
 .editor-title{
   display: flex;
@@ -23,4 +40,14 @@ body{
   padding: 0rem 0.5rem 0rem 1rem;
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.CodeMirror{
+  height: 100% !important;
+}
+.code-mirror-wrapper{
+  flex-grow: 1;
+  border-bottom-right-radius: .5rem;
+  border-bottom-left-radius: .5rem;
+  overflow: hidden;
 }

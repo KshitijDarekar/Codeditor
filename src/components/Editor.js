@@ -5,8 +5,12 @@ import 'codemirror/mode/xml/xml'
 import 'codemirror/mode/css/css'
 import 'codemirror/mode/javascript/javascript.js'
 import {Controlled as CodeMirror} from 'react-codemirror2'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCompressAlt,faExpandAlt } from "@fortawesome/free-solid-svg-icons";
+
 
 function Editor(props) {
+    const [open,setOpen]=useState(true);
     const {
         language,
         displayName,
@@ -18,12 +22,19 @@ function Editor(props) {
         onChange(value);
 
     }
+    
   return (
     <>
-    <div className="editor-container">
+    <div className={`editor-container ${open ?'':'collapsed'}`}>
         <div className="editor-title">
             {displayName}
-            <button>O/C</button>
+            <button
+            type="button"
+            className="expand-collapse-btn"
+            onClick={()=>setOpen(prevOpen=>!prevOpen)}
+            >
+                < FontAwesomeIcon icon= {open ? faCompressAlt : faExpandAlt} />
+            </button>
         </div>
         
     <CodeMirror
@@ -36,9 +47,6 @@ function Editor(props) {
             theme:'material',
         } 
         }
-        // onBeforeChange={(editor, data, value) => {
-        //     this.setState(value);
-        // }}
         onBeforeChange={handleChange }
         onChange={(editor, data, value) => {
         }}
