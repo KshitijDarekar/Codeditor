@@ -1,3 +1,32 @@
+
+# Code Editor
+
+An online code-editor for HTML, CSS, JS code snippets.
+
+
+## Demo
+
+![App](https://res.cloudinary.com/horizonkd/image/upload/v1626781912/Code%20Editor/code-editor_ffkskv.gif)
+
+  
+## Screenshots
+
+![App Screenshot](https://res.cloudinary.com/horizonkd/image/upload/v1626781301/Code%20Editor/Screenshot_2021-07-20_123915_zbunsr.png)
+
+  
+## Tech Stack
+
+![App Screenshot](https://img.shields.io/badge/-React-blue)
+
+
+
+## Authors
+
+- [@KshitijDarekar](https://www.github.com/KshitijDarekar)
+
+  
+## Documentation
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
