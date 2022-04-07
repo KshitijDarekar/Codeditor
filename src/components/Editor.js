@@ -1,6 +1,6 @@
 import React,{useState} from "react";
 import 'codemirror/lib/codemirror.css'
-import 'codemirror/theme/material.css'
+
 import 'codemirror/mode/xml/xml'
 import 'codemirror/mode/css/css'
 import 'codemirror/mode/javascript/javascript.js'
@@ -15,12 +15,14 @@ function Editor(props) {
         language,
         displayName,
         value,
-        onChange
+        onChange, 
+        theme
     } = props ;
+
+    import(`codemirror/theme/${theme}.css`);
 
     function handleChange(editor, data, value){
         onChange(value);
-
     }
     
   return (
@@ -44,7 +46,7 @@ function Editor(props) {
             lint: true,
             mode:language,
             lineNumbers:true,
-            theme:'material',
+            theme: theme,
         } 
         }
         onBeforeChange={handleChange }

@@ -1,11 +1,69 @@
 body{
   margin: 0;
 }
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  background-color:#262626;
+}
+.menu .menu-btn {
+  position: relative;
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  background-color:#262626;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: all 0.25s ease;
+} 
+.menu .menu-btn--active {
+  background-color:#474747;
+}
+.menu .menu-btn:hover {
+  background-color:#474747;
+}
+.menu .menu-options {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  min-width: 200px;
+  max-height: 200px;
+  background-color: #474747;
+  z-index: 10;
+  overflow-y: auto;
+}
+.menu .menu-options::-webkit-scrollbar {
+  background-color: #474747;
+}
+.menu .menu-options::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+  border: 5px solid #474747;
+}
+.menu .option {
+  text-align: left;
+  padding: 0.25rem 1.5rem;
+}
+.menu .option:hover {
+  background-color:#666666;
+}
+.menu .option .icon{
+  vertical-align: auto;
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
 .top-pane{
-  background-color:#9C9C9C ;
+  background-color:#9C9C9C;
 }
 .pane{
-  height: 50vh;
+  flex: 1 1;
   display: flex;  
 }
 .editor-container{
