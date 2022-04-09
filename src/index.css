@@ -11,7 +11,8 @@ body{
 }
 .menu .menu-btn {
   position: relative;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding: 0.25rem 0.5rem;
   background-color:#262626;
   color: white;
@@ -20,6 +21,10 @@ body{
   outline: none;
   transition: all 0.25s ease;
 } 
+.menu .menu-btn > svg {
+  margin-left: 5px;
+  transform: rotate(90deg);
+}
 .menu .menu-btn--active {
   background-color:#474747;
 }

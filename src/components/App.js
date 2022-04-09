@@ -5,6 +5,8 @@ import { Menu } from './Menu.js';
 import { MenuBtn } from './MenuBtn.js';
 import { MenuOption } from './MenuOption.js';
 import { themesNames } from '../utils/themesNames.js';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
 function App() {
   const [html,setHtml]= useLocalStorage('html','');
@@ -34,7 +36,7 @@ function App() {
   return (
     <>
       <Menu>
-      <MenuBtn title='Theme'>
+      <MenuBtn title='Theme' icon={() => <FontAwesomeIcon icon={faCaretRight} />}>
           {
             themesNames.map(theme => (
               <MenuOption 
