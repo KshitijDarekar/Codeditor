@@ -1,4 +1,4 @@
-body{
+body {
   margin: 0;
 }
 #root {
@@ -7,29 +7,29 @@ body{
   flex-direction: column;
 }
 .menu {
-  background-color:#262626;
+  background-color: #262626;
 }
 .menu .menu-btn {
   position: relative;
   display: inline-flex;
   align-items: center;
   padding: 0.25rem 0.5rem;
-  background-color:#262626;
+  background-color: #262626;
   color: white;
   cursor: pointer;
   border: none;
   outline: none;
   transition: all 0.25s ease;
-} 
+}
 .menu .menu-btn > svg {
   margin-left: 5px;
   transform: rotate(90deg);
 }
 .menu .menu-btn--active {
-  background-color:#474747;
+  background-color: #474747;
 }
 .menu .menu-btn:hover {
-  background-color:#474747;
+  background-color: #474747;
 }
 .menu .menu-options {
   position: absolute;
@@ -57,45 +57,50 @@ body{
   padding: 0.25rem 1.5rem;
 }
 .menu .option:hover {
-  background-color:#666666;
+  background-color: #666666;
 }
-.menu .option .icon{
+.menu .option .icon {
   vertical-align: auto;
   font-size: 0.75rem;
   margin-left: 0.5rem;
 }
-.top-pane{
-  background-color:#9C9C9C;
+.top-pane {
+  background-color: #9c9c9c;
 }
-.pane{
+.pane {
   flex: 1 1;
-  display: flex;  
+  display: flex;
 }
-.editor-container{
+.editor-container {
   flex-grow: 1;
   flex-basis: 0;
   display: flex;
   flex-direction: column;
   padding: 0.5rem;
-  background-color:#9C9C9C ;
-
+  background-color: #9c9c9c;
 }
-.editor-container.collapsed{
+.editor-container.collapsed {
   flex-grow: 0;
 }
-.editor-container.collapsed .CodeMirror-scroll{
+.editor-container.collapsed .CodeMirror-scroll {
   position: absolute;
   overflow: hidden !important;
 }
-.expand-collapse-btn{
+.expand-collapse-btn {
   margin-left: 0.5rem;
   background: none;
   border: none;
   color: white;
   cursor: pointer;
-
 }
-.editor-title{
+.copy-btn {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.editor-title {
   display: flex;
   justify-content: space-between;
   background-color: #262626;
@@ -105,12 +110,169 @@ body{
   border-top-right-radius: 0.5rem;
 }
 
-.CodeMirror{
+.CodeMirror {
   height: 100% !important;
 }
-.code-mirror-wrapper{
+.code-mirror-wrapper {
   flex-grow: 1;
-  border-bottom-right-radius: .5rem;
-  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
   overflow: hidden;
+}
+.home-container {
+  padding: 5rem;
+  font-family: "Ubuntu Mono", monospace;
+  background-color: #131417;
+  color: #fff;
+}
+.main-section {
+  display: flex;
+  align-items: center;
+}
+.main-text {
+  font-size: 2.5rem;
+}
+.main-image {
+  width: 850px;
+  height: 100%;
+}
+.main-cta-btn {
+  background-color: #47cf73;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.75rem 1rem;
+  font-size: 1.5rem;
+  font-family: "Ubuntu Mono", monospace;
+  cursor: pointer;
+}
+.main-cta-btn:hover {
+  background-color: #248c46;
+  color: #fff;
+}
+.card-section {
+  display: flex;
+  margin: 8rem 0 0 0;
+}
+.card {
+  background-color: rgb(44, 48, 58);
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+.card-icon {
+  font-size: 2rem;
+  background-color: #131417;
+  padding: 1rem;
+  border: 1px solid white;
+  border-radius: 0.5rem;
+  position: absolute;
+  top: -2.5rem;
+}
+.card-header {
+  font-size: 1.5rem;
+}
+.card-body {
+  font-size: 1.25rem;
+}
+.languages-section {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+.languages-text {
+  font-size: 2.5rem;
+  width: 700px;
+}
+.languages-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.language-container {
+  background-color: rgb(44, 48, 58);
+  border-radius: 0.2rem;
+  padding: 1rem 0.5rem;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.language-image {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+.language-name {
+  color: #0fbffb;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+.contact-section {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+}
+.contact-image {
+  padding-right: 5rem;
+}
+.contact-name {
+  color: #0fbffb;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .home-container {
+    padding: 2rem;
+  }
+  .main-section {
+    flex-direction: column-reverse;
+  }
+  .main-text {
+    font-size: 2rem;
+  }
+  .main-image {
+    width: 100%;
+  }
+  .card-section {
+    flex-direction: column;
+  }
+  .card {
+    margin: 0 0 4rem 0 !important;
+  }
+  .languages-section {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  .languages-text {
+    width: 100%;
+  }
+  .contact-section {
+    flex-direction: column;
+  }
+  .contact-image {
+    padding-right: 0rem;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 2rem;
+  }
+  .main-section {
+    flex-direction: column-reverse;
+  }
+  .main-text {
+    font-size: 2rem;
+  }
+  .main-image {
+    width: 100%;
+  }
+  .languages-section {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  .languages-text {
+    width: 100%;
+  }
 }

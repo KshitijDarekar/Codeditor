@@ -1,60 +1,73 @@
-import React,{useState} from "react";
-import 'codemirror/lib/codemirror.css'
-
-import 'codemirror/mode/xml/xml'
-import 'codemirror/mode/css/css'
-import 'codemirror/mode/javascript/javascript.js'
-import {Controlled as CodeMirror} from 'react-codemirror2'
+import React, { useState } from "react";
+import "codemirror/lib/codemirror.css";
+import "codemirror/mode/xml/xml";
+import "codemirror/mode/css/css";
+import "codemirror/mode/javascript/javascript.js";
+import { Controlled as CodeMirror } from "react-codemirror2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCompressAlt,faExpandAlt } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faCompressAlt,
+  faExpandAlt,
+  faClipboard,
+  faClipboardCheck,
+} from "@fortawesome/free-solid-svg-icons";
+import { CopyToClipboard } from "react-copy-to-clipboard";
 
 function Editor(props) {
-    const [open,setOpen]=useState(true);
-    const {
-        language,
-        displayName,
-        value,
-        onChange, 
-        theme
-    } = props ;
+  const [open, setOpen] = useState(true);
+  const [copied, setCopied] = useState(false);
 
-    import(`codemirror/theme/${theme}.css`);
+  const onCopyText = () => {
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  };
 
-    function handleChange(editor, data, value){
-        onChange(value);
-    }
-    
+  const { language, displayName, value, onChange, theme } = props;
+
+  import(`codemirror/theme/${theme}.css`);
+
+  function handleChange(editor, data, value) {
+    onChange(value);
+  }
+
   return (
     <>
-    <div className={`editor-container ${open ?'':'collapsed'}`}>
+      <div className={`editor-container ${open ? "" : "collapsed"}`}>
         <div className="editor-title">
-            {displayName}
+          {displayName}
+          <div>
             <button
-            type="button"
-            className="expand-collapse-btn"
-            onClick={()=>setOpen(prevOpen=>!prevOpen)}
+              className="expand-collapse-btn"
+              onClick={() => setOpen((prevOpen) => !prevOpen)}
             >
-                < FontAwesomeIcon icon= {open ? faCompressAlt : faExpandAlt} />
+              <FontAwesomeIcon icon={open ? faCompressAlt : faExpandAlt} />
             </button>
+            <CopyToClipboard text={value} onCopy={onCopyText}>
+              <button className="copy-btn">
+                <FontAwesomeIcon
+                  icon={copied ? faClipboardCheck : faClipboard}
+                />
+              </button>
+            </CopyToClipboard>
+          </div>
         </div>
-        
-    <CodeMirror
-        value={value}
-        options={{
-            lineWrapping : true,
+
+        <CodeMirror
+          value={value}
+          options={{
+            lineWrapping: true,
             lint: true,
-            mode:language,
-            lineNumbers:true,
+            mode: language,
+            lineNumbers: true,
             theme: theme,
-        } 
-        }
-        onBeforeChange={handleChange }
-        onChange={(editor, data, value) => {
-        }}
-        className="code-mirror-wrapper"
-    />
-    </div>
+          }}
+          onBeforeChange={handleChange}
+          onChange={(editor, data, value) => {}}
+          className="code-mirror-wrapper"
+        />
+      </div>
     </>
   );
 }

@@ -1,14 +1,14 @@
 import React,{useState,useEffect} from 'react';
-import Editor from './Editor.js';
+import Editor from '../components/Editor.js';
 import useLocalStorage from '../hooks/useLocalStorage'
-import { Menu } from './Menu.js';
-import { MenuBtn } from './MenuBtn.js';
-import { MenuOption } from './MenuOption.js';
+import { Menu } from '../components/Menu.js';
+import { MenuBtn } from '../components/MenuBtn.js';
+import { MenuOption } from '../components/MenuOption.js';
 import { themesNames } from '../utils/themesNames.js';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretRight } from "@fortawesome/free-solid-svg-icons";
 
-function App() {
+export default function EditorPage() {
   const [html,setHtml]= useLocalStorage('html','');
   const [css,setCss]= useLocalStorage('css','');
   const [js,setJs]= useLocalStorage('js','');
@@ -85,5 +85,3 @@ function App() {
     </>
   );
 }
-
-export default App;
