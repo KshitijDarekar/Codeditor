@@ -37,7 +37,7 @@ function Editor(props) {
       <div className={`editor-container ${open ? "" : "collapsed"}`}>
         <div className="editor-title">
           {displayName}
-          <div>
+          <div className="button-group-editor">
             <button
               className="expand-collapse-btn"
               onClick={() => setOpen((prevOpen) => !prevOpen)}
