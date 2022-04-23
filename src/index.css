@@ -86,6 +86,9 @@ body {
   position: absolute;
   overflow: hidden !important;
 }
+.button-group-editor {
+  display: inline-flex;
+}
 .expand-collapse-btn {
   margin-left: 0.5rem;
   background: none;
