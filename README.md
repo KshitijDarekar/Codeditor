@@ -1,99 +1,121 @@
 
-# Code Editor
+# Codeditor (aka Coditor)
 
-An online code-editor for HTML, CSS, JS code snippets.
+![](https://res.cloudinary.com/horizonkd/image/upload/v1659377963/Code%20Editor/Screenshot_2022-08-01_at_11.48.49_PM_vwgg6h.png)
+
+A web-based code editor for HTML, CSS, and JS code snippets.💻
+The ability to use a local code editor may not always be available to developers, whether novice or experienced.👤
+As a result, Codeditor 🚀 is an excellent alternative for developers to create, test, and discover front-end code.🌟
+
+---
 
 
-## Demo
+![](https://img.shields.io/badge/Status-Ongoing-green.svg)	[![license](https://img.shields.io/github/license/KshitijDarekar/Codeditor?color=red)](https://github.com/KshitijDarekar/Codeditor/blob/master/LICENSE)
+
+## Glimpse 🚀
+
+
+[![Live Demo](https://img.shields.io/badge/%F0%9F%8C%90%20Live%20Demo-Click%20Here-blueviolet?style=for-the-badge)](https://coditor.netlify.app)
+
 
 ![App](https://res.cloudinary.com/horizonkd/image/upload/v1626781912/Code%20Editor/code-editor_ffkskv.gif)
 
-  
-## Screenshots
 
-![App Screenshot](https://res.cloudinary.com/horizonkd/image/upload/v1626781301/Code%20Editor/Screenshot_2021-07-20_123915_zbunsr.png)
+## Contributing 🤝
 
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/KshitijDarekar/Codeditor/pulls) [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?color=red)](https://github.com/KshitijDarekar/Codeditor)
+
+
+![GitHub contributors](https://img.shields.io/github/contributors/KshitijDarekar/Codeditor)	![GitHub issues](https://img.shields.io/github/issues/KshitijDarekar/Codeditor)	![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/KshitijDarekar/Codeditor)	![GitHub pull requests](https://img.shields.io/github/issues-pr/KshitijDarekar/Codeditor)	![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed-raw/KshitijDarekar/Codeditor) ![GitHub top language](https://img.shields.io/github/languages/top/KshitijDarekar/Codeditor?style=flat-square)
+
+> Please read our [Code of Conduct ](https://github.com/KshitijDarekar/Codeditor/blob/master/CODE_OF_CONDUCT.md).
+
+
+**We're accepting PRs for our open and unassigned [issues🐛](https://github.com/KshitijDarekar/Codeditor/issues)**. Please check [CONTRIBUTING.md✨](https://github.com/KshitijDarekar/Codeditor/blob/master/CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:** 
+
+**0.** Star [this](https://github.com/KshitijDarekar/Codeditor) repository.
+
+**1.** Fork [this](https://github.com/KshitijDarekar/Codeditor) repository.
+
+**2.** Clone the forked repository.
+
+```bash
+git clone https://github.com/<your-github-username>/Codeditor
+```
+
+**3.** Navigate to the project directory.
+
+```bash
+cd Codeditor
+```
+
+**4.** Create a new branch.
+
+```bash
+git checkout -b <your_branch_name>
+```
+
+**5.** Make changes.
+
+**6.** Stage your changes and commit
+
+```bash
+git add -A
+
+git commit -m "<your_commit_message>"
+```
+
+**7.** Push your local commits to the remote repo.
+
+```bash
+git push -u origin <your_branch_name>
+```
+
+**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to `develop` !
+
+**9.** **Congratulations!** 🎉 Sit and relax, you've made your contribution to [Codeditor](https://github.com/KshitijDarekar/Codeditor). ❤️ 💥
+
+## Features ✨
+
+  ✅ Themes 
   
+  ✅ Live previews
+  
+  ✅ Copy to ClipBoard
+  
+  ✅ Responsive
+
+
 ## Tech Stack
 
-![App Screenshot](https://img.shields.io/badge/-React-blue)
+![React](https://img.shields.io/badge/react-555555?style=for-the-badge&logo=react)		![JS](https://img.shields.io/badge/JavaScript-555555?style=for-the-badge&logo=JavaScript)		![CSS3](https://img.shields.io/badge/css3-555555?style=for-the-badge&logo=css3&logoColor=1572B6)
 
+
+
+## Roadmap
+
+- Additional language support
+
+- Add more integrations
+
+- Add real-time collaboration support
 
 
 ## Authors
 
-- [@KshitijDarekar](https://www.github.com/KshitijDarekar)
+- [KshitijDarekar](https://www.github.com/KshitijDarekar)
 
-  
-## Documentation
 
-# Getting Started with Create React App
+## Contributors 👨‍💻 👩‍💻
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Thank you for Contributing 🙏 💫 
+![4](https://contributors-img.web.app/image?repo=KshitijDarekar/Codeditor)
 
-## Available Scripts
 
-In the project directory, you can run:
+### If you liked our work do give us a star ⭐️⭐️⭐️ .It Encourages us to do more 😃 💫
+----
 
-### `npm start`
+## Feedback ✉️
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+If you have any feedback, please reach out to us at ksh.dar.rt19@rait.ac.in
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
